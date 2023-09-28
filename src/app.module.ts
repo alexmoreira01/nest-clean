@@ -14,3 +14,4 @@ import { envSchema } from 'src/env'
   controllers: [CreateAccountController],
   providers: [PrismaService],
 })
+export class AppModule {}
