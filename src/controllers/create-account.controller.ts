@@ -25,7 +25,7 @@ export class CreateAccountController {
 
   @Post()
   @HttpCode(201)
-  @UsePipes(new ZodValidationPipe(createAccountBodySchema))
+  @UsePipes(new ZodValidationPipe(createAccountBodySchema)) // Validation with pipe
   async handle(@Body() body: CreateAccountBodySchema) {
     const { name, email, password } = body
 
